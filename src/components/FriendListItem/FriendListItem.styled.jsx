@@ -1,10 +1,15 @@
 import styled from '@emotion/styled';
 
 export const Item = styled.li`
-  /* background-color: crimson; */
+  display: flex;
+  align-items: center;
 `;
 
 export const Status = styled.span`
+  width: 5px;
+  height: 5px;
+  border-radius: 70%;
+  margin-right: 5px;
   background-color: ${props => {
     if (props.isOnline) return 'green';
 
@@ -17,5 +22,5 @@ export const Avatar = styled.img`
 `;
 
 export const Name = styled.p`
-  /* background-color: #0c0cb4; */
+  margin-left: 15px;
 `;

@@ -10,7 +10,7 @@ import { Transactions } from 'components/TransactionHistory/TransactionHistory';
 export const App = () => {
   return (
     <>
-      {/* <Profile
+      <Profile
         username={user.username}
         nickname={user.tag}
         location={user.location}
@@ -18,9 +18,9 @@ export const App = () => {
         followers={user.stats.followers}
         views={user.stats.views}
         likes={user.stats.likes}
-      /> */}
-      {/* <Statistics title="Upload stats" stats={data}></Statistics> */}
-      {/* <FriendList friends={friends} /> */}
+      />
+      <Statistics title="Upload stats" stats={data}></Statistics>
+      <FriendList friends={friends} />
       <Transactions items={transactions} />
     </>
   );

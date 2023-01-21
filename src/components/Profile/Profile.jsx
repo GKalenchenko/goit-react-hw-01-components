@@ -9,6 +9,7 @@ import {
   StatsList,
   StatLabel,
   StatValue,
+  Item,
 } from './Profile.styled';
 
 export const Profile = ({
@@ -30,18 +31,18 @@ export const Profile = ({
       </DescriptionBlock>
 
       <StatsList>
-        <li>
+        <Item>
           <StatLabel>Followers</StatLabel>
           <StatValue>{followers}</StatValue>
-        </li>
-        <li>
+        </Item>
+        <Item>
           <StatLabel>Views</StatLabel>
           <StatValue>{views}</StatValue>
-        </li>
-        <li>
+        </Item>
+        <Item>
           <StatLabel>Likes</StatLabel>
           <StatValue>{likes}</StatValue>
-        </li>
+        </Item>
       </StatsList>
     </CardWrapper>
   );

@@ -2,15 +2,12 @@ import styled from '@emotion/styled';
 
 export const CardWrapper = styled.div`
   padding: 8px;
-  background-color: #b9cc10;
 `;
 
 export const DescriptionBlock = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background-color: #e7e2ec;
 `;
 
 export const Avatar = styled.img`
@@ -21,7 +18,6 @@ export const Avatar = styled.img`
 
 export const Name = styled.p`
   color: blue;
-  margin-bottom: 20px;
 `;
 
 export const Nickname = styled.p`
@@ -33,13 +29,23 @@ export const Location = styled.p`
 `;
 
 export const StatsList = styled.ul`
-  /* background-color: #e2d62b; */
+  display: flex;
+  justify-content: center;
 `;
 
-export const StatLabel = styled.span`
-  /* background-color: darkblue; */
-`;
+export const StatLabel = styled.span``;
 
-export const StatValue = styled.span`
-  /* background-color: #3b0303; */
+export const StatValue = styled.span``;
+
+export const Item = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 90px;
+  height: 50px;
+
+  :not(:last-child) {
+    margin-right: 12px;
+  }
 `;

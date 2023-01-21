@@ -1,24 +1,27 @@
 import styled from '@emotion/styled';
 
-export const StatWrapper = styled.section`
-  background-color: blue;
-`;
+export const StatWrapper = styled.section``;
 
 export const Title = styled.h2`
+  text-align: center;
   color: blueviolet;
+  margin-bottom: 15px;
 `;
 
 export const List = styled.ul`
-  background-color: brown;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
 `;
 
 export const Item = styled.li`
+  display: flex;
   background-color: #f0f4ff;
+  flex-direction: column;
+  align-items: center;
+
+  width: 90px;
 `;
 
-export const Label = styled.span`
-  background-color: olive;
-`;
-export const Value = styled.span`
-  background-color: darkcyan;
-`;
+export const Label = styled.span``;
+export const Value = styled.span``;
