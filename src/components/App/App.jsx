@@ -6,10 +6,11 @@ import { Profile } from '../Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
 import { FriendList } from 'components/FriendList/FriendList';
 import { Transactions } from 'components/TransactionHistory/TransactionHistory';
+import { Container } from './App.styled';
 
 export const App = () => {
   return (
-    <>
+    <Container>
       <Profile
         username={user.username}
         nickname={user.tag}
@@ -22,6 +23,6 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data}></Statistics>
       <FriendList friends={friends} />
       <Transactions items={transactions} />
-    </>
+    </Container>
   );
 };

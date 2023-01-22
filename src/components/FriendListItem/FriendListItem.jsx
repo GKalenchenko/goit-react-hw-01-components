@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Item, Status, Avatar, Name } from './FriendListItem.styled';
 
 export const Friend = ({ avatar, name, isOnline }) => (
-  <Item>
+  <Item isOnline={isOnline}>
     <Status isOnline={isOnline}>{isOnline}</Status>
     <Avatar src={avatar} alt="User avatar" width="48" />
     <Name>{name}</Name>

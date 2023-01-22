@@ -10,6 +10,7 @@ import {
   StatLabel,
   StatValue,
   Item,
+  Container,
 } from './Profile.styled';
 
 export const Profile = ({
@@ -22,29 +23,31 @@ export const Profile = ({
   likes,
 }) => {
   return (
-    <CardWrapper>
-      <DescriptionBlock>
-        <Avatar src={avatar} alt="User avatar" />
-        <Name>{username}</Name>
-        <Nickname>@{nickname}</Nickname>
-        <Location>{location}</Location>
-      </DescriptionBlock>
+    <Container>
+      <CardWrapper>
+        <DescriptionBlock>
+          <Avatar src={avatar} alt="User avatar" />
+          <Name>{username}</Name>
+          <Nickname>@{nickname}</Nickname>
+          <Location>{location}</Location>
+        </DescriptionBlock>
 
-      <StatsList>
-        <Item>
-          <StatLabel>Followers</StatLabel>
-          <StatValue>{followers}</StatValue>
-        </Item>
-        <Item>
-          <StatLabel>Views</StatLabel>
-          <StatValue>{views}</StatValue>
-        </Item>
-        <Item>
-          <StatLabel>Likes</StatLabel>
-          <StatValue>{likes}</StatValue>
-        </Item>
-      </StatsList>
-    </CardWrapper>
+        <StatsList>
+          <Item>
+            <StatLabel>Followers</StatLabel>
+            <StatValue>{followers}</StatValue>
+          </Item>
+          <Item>
+            <StatLabel>Views</StatLabel>
+            <StatValue>{views}</StatValue>
+          </Item>
+          <Item>
+            <StatLabel>Likes</StatLabel>
+            <StatValue>{likes}</StatValue>
+          </Item>
+        </StatsList>
+      </CardWrapper>
+    </Container>
   );
 };
 
